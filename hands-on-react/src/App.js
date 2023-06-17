@@ -3,13 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome'
 import Support from './components/Support'
+import ListCast from './components/ListCast'
 //Class components
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <article>
 <Welcome name="Lungelo"/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -22,8 +23,11 @@ function App() {
         >
           Learn React
         </a>
+       
+        <ListCast/>
         <Support/>
-      </header>
+ 
+      </article>
     </div>
   );
 }

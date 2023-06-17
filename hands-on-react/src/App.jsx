@@ -29,7 +29,7 @@ useEffect(()=>{
       <h1>Meet the star gazers</h1>
        
         <ListCast cast={cast} onChoice={(info)=>{setMemberInfo(info)}}/>
-        {memberInfo && <Modals member={memberInfo} handleClose={()=>{setMemberInfo(null)}}/>
+        {memberInfo && <Modals member={memberInfo} handleChange={(info)=>{setMemberInfo(cast[info])}} handleClose={()=>{setMemberInfo(null)}}/>
        
         }
         </hgroup>

@@ -1,26 +1,16 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/Welcome'
+import Support from './components/Support'
 //Class components
-class Welcome extends React.Component{
-  constructor(props){
-    super(props);
-  }
-  render(){
-    return <h1>Meet us {this.props.name}</h1>
-  }
-}
-//Hooks or functional components
-const Hello=(props)=>{
-  return <h1>Meet me <i>{props.name}</i></h1>
-}
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 <Welcome name="Lungelo"/>
-<Hello  name="Lungelo"/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -32,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Support/>
       </header>
     </div>
   );
